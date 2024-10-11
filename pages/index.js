@@ -24,58 +24,57 @@ export default function Home() {
         <meta name="description" content="Portfolio of Ritik Choubey, Frontend Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="font-mono bg-gray-300 px-8 dark:bg-gray-900 md:px-20 lg:px-40">
-        <section className="min-h-screen">
-          {/* Navbar */}
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-2xl">Ritik Choubey</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl transition-transform transform hover:scale-110"
-                />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-br from-purple-600 via-gray-400 to-pink-400 text-white px-4 py-2 rounded-lg ml-8 shadow-lg hover:shadow-xl hover:scale-105 transition-transform"
-                  href="/Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <main className="font-mono bg-gray-300 dark:bg-gray-900 container mx-auto px-4 md:px-8 lg:px-20">
+  <section className="min-h-screen w-full">
+    {/* Navbar */}
+    <nav className="py-10 mb-12 flex justify-between dark:text-white">
+      <h1 className="font-burtons text-2xl">Ritik Choubey</h1>
+      <ul className="flex items-center">
+        <li>
+          <BsFillMoonStarsFill
+            onClick={() => setDarkMode(!darkMode)}
+            className="cursor-pointer text-2xl transition-transform transform hover:scale-110"
+          />
+        </li>
+        <li>
+          <a
+            className="bg-gradient-to-br from-purple-600 via-gray-400 to-pink-400 text-white px-4 py-2 rounded-lg ml-8 shadow-lg hover:shadow-xl hover:scale-105 transition-transform"
+            href="/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-          {/* Hero Section */}
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl font-extrabold py-2 bg-gradient-to-br from-purple-700 to-gray-200 text-transparent bg-clip-text md:text-6xl">
-              Ritik Choubey
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Front-end Developer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Seeking a challenging and rewarding opportunity to grow my coding skills and explore new technologies.
-            </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/consoleLogRitik" className="hover:text-gray-800 dark:hover:text-gray-100 transition-colors">
-                <AiFillGithub />
-              </a>
-              <a href="https://www.linkedin.com/in/ritik-choubey-4503a0283/" className="hover:text-gray-800 dark:hover:text-gray-100 transition-colors">
-                <AiFillLinkedin />
-              </a>
-              <a href="mailto:ritikchoubey12102@gmail.com" className="hover:text-gray-800 dark:hover:text-gray-100 transition-colors">
-                <AiFillMail />
-              </a>
-            </div>
-            <div className="mx-auto bg-gradient-to-b rounded-full from-teal-500 w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 shadow-2xl hover:shadow-lg transition-shadow">
-              <Image src={ritik} layout="fill" objectFit="cover" alt="Ritik Choubey" />
-            </div>
-          </div>
-        </section>
+    {/* Hero Section */}
+    <div className="text-center p-10 py-10">
+      <h2 className="text-5xl font-extrabold py-2 bg-gradient-to-br from-purple-700 to-gray-200 text-transparent bg-clip-text md:text-6xl">
+        Ritik Choubey
+      </h2>
+      <h3 className="text-xl py-2 dark:text-white md:text-3xl">
+        Front-end Developer
+      </h3>
+      <p className="text-sm py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+        Seeking a challenging and rewarding opportunity to grow my coding skills and explore new technologies.
+      </p>
+      {/* Social Links and Profile Image */}
+      <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+        {/* Links */}
+      </div>
+      <div className="mx-auto bg-gradient-to-b rounded-full from-teal-500 w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 shadow-2xl hover:shadow-lg transition-shadow">
+        <Image
+          src={ritik}
+          layout="fill"
+          objectFit="cover"
+          alt="Ritik Choubey"
+          priority
+        />
+      </div>
+    </div>
+  </section>
 
         {/* Skills Section */}
         <section>
