@@ -50,7 +50,9 @@ export default function Home() {
     </nav>
 
     {/* Hero Section */}
-    <div className= "w-full flex flex-col items-center text-center p-10 py-10">
+
+
+    <div className= "w-full flex flex-col items-center text-center p-10 py-10 back">
       <h2 className="text-5xl font-extrabold py-2 bg-gradient-to-br from-purple-700 to-gray-200 text-transparent bg-clip-text md:text-6xl">
         Ritik Choubey
       </h2>
@@ -87,7 +89,7 @@ export default function Home() {
             <h3 className="text-6xl font-extrabold py-8 dark:text-white text-center">Skills</h3>
           </div>
           <div className="lg:flex gap-10 justify-center">
-            <div className="w-screen flex gap-4 flex-col items-center justify-between text-8xl dark:text-white lg:flex-row lg:flex-wrap">
+            <div className="flex gap-4 flex-col items-center justify-between text-8xl dark:text-white lg:flex-row lg:flex-wrap">
               <FaReact className="hover:text-blue-400 transition-colors" />
               <TbBrandJavascript className="hover:text-yellow-400 transition-colors" />
               <TbBrandCpp className="hover:text-blue-600 transition-colors" />
@@ -106,11 +108,11 @@ export default function Home() {
 
           <div className="w-full flex flex-col items-center gap-10 lg:flex-row flex-wrap justify-center font-mono">
             {/* Project Card 1 */}
-            <div className="opacity-90  flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+            <div className=" opacity-90  flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
               <div className="relative w-full h-40">
                 <Image src={ipl} alt="IPLpedia Project Screenshot" layout="fill" objectFit="cover" className="rounded-t-lg" />
               </div>
-              <h1 className="pt-8 font-semibold text-xl w-full text-center">
+              <h1 className="  dark:text-white pt-8 font-semibold text-xl w-full text-center">
                 IPLpedia
               </h1>
               <p className="p-4 font-mono text-gray-600 dark:text-gray-300">
@@ -127,11 +129,11 @@ export default function Home() {
             </div>
 
             {/* Project Card 2 */}
-            <div className="opacity-90 flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+            <div className=" opacity-90 flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
               <div className="relative w-full h-40">
                 <Image src={eatsy} alt="Eatsy Project Screenshot" layout="fill" objectFit="cover" className="rounded-t-lg" />
               </div>
-              <h1 className="pt-8 font-semibold text-xl w-full text-center">
+              <h1 className=" dark:text-white pt-8 font-semibold text-xl w-full text-center">
                 Eatsy
               </h1>
               <p className="p-4 font-mono text-gray-600 dark:text-gray-300">
@@ -148,11 +150,11 @@ export default function Home() {
             </div>
 
             {/* Project Card 3 */}
-            <div className="opacity-90 flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+            <div className=" opacity-90 flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
               <div className="relative w-full h-40">
                 <Image src={weather} alt="Weather App Project Screenshot" layout="fill" objectFit="cover" className="rounded-t-lg" />
               </div>
-              <h1 className="pt-8 font-semibold text-xl w-full text-center">
+              <h1 className="dark:text-white pt-8 font-semibold text-xl w-full text-center">
                 Weather App
               </h1>
               <p className="p-4 font-mono text-gray-600 dark:text-gray-300">
