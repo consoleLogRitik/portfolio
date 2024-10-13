@@ -63,9 +63,9 @@ export default function Home() {
       {/* Social Links and Profile Image */}
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
         {/* Links */}
-        <a href="https://github.com/consoleLogRitik" target="_blank"><AiFillGithub/></a>
-        <a href="https://www.linkedin.com/in/ritik-choubey-4503a0283/" target="_blank"><AiFillLinkedin/></a>
-        <a href="mailto:ritikchoubey12102@gmail.com" target="_blank"><AiFillMail/></a>
+        <a href="https://github.com/consoleLogRitik" target="_blank" rel="noreferrer"><AiFillGithub/></a>
+        <a href="https://www.linkedin.com/in/ritik-choubey-4503a0283/" target="_blank" rel="noreferrer"><AiFillLinkedin/></a>
+        <a href="mailto:ritikchoubey12102@gmail.com" target="_blank" rel="noreferrer"><AiFillMail/></a>
       </div>
       <div className="bg-gradient-to-b rounded-full w-64 h-64 relative overflow-hidden mt-8 md:h-96 md:w-96 shadow-2xl hover:shadow-lg transition-shadow">
         <Image
