@@ -50,7 +50,7 @@ export default function Home() {
     </nav>
 
     {/* Hero Section */}
-    <div className="text-center p-10 py-10">
+    <div className= "w-full flex flex-col items-center text-center p-10 py-10">
       <h2 className="text-5xl font-extrabold py-2 bg-gradient-to-br from-purple-700 to-gray-200 text-transparent bg-clip-text md:text-6xl">
         Ritik Choubey
       </h2>
@@ -63,21 +63,26 @@ export default function Home() {
       {/* Social Links and Profile Image */}
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
         {/* Links */}
+        <a href="https://github.com/consoleLogRitik" target="_blank"><AiFillGithub/></a>
+        <a href="https://www.linkedin.com/in/ritik-choubey-4503a0283/" target="_blank"><AiFillLinkedin/></a>
+        <a href="mailto:ritikchoubey12102@gmail.com" target="_blank"><AiFillMail/></a>
       </div>
-      <div className="mx-auto bg-gradient-to-b rounded-full from-teal-500 w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 shadow-2xl hover:shadow-lg transition-shadow">
+      <div className="bg-gradient-to-b rounded-full w-64 h-64 relative overflow-hidden mt-8 md:h-96 md:w-96 shadow-2xl hover:shadow-lg transition-shadow">
         <Image
           src={ritik}
           layout="fill"
           objectFit="cover"
           alt="Ritik Choubey"
           priority
+          
         />
       </div>
+
     </div>
   </section>
 
         {/* Skills Section */}
-        <section>
+        <section className="w-full flex flex-col items-center">
           <div>
             <h3 className="text-6xl font-extrabold py-8 dark:text-white text-center">Skills</h3>
           </div>
@@ -101,7 +106,7 @@ export default function Home() {
 
           <div className="w-full flex flex-col items-center gap-10 lg:flex-row flex-wrap justify-center font-mono">
             {/* Project Card 1 */}
-            <div className="opacity-90 flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+            <div className="opacity-90  flex flex-col justify-between shadow-lg w-full md:w-1/2 lg:w-1/3 bg-white dark:bg-gray-800 rounded-lg h-96 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
               <div className="relative w-full h-40">
                 <Image src={ipl} alt="IPLpedia Project Screenshot" layout="fill" objectFit="cover" className="rounded-t-lg" />
               </div>
